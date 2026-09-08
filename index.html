@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,400;0,600;0,700;1,400&amp;family=Manrope:wght@600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-primary": "#ffffff", "surface-container-low": "#f1f4f7", "error-container": "#ffdad6", "on-tertiary-fixed": "#002113", "secondary-fixed-dim": "#aac7ff", "inverse-on-surface": "#eef1f4", "on-secondary-fixed-variant": "#00458d", "secondary-fixed": "#d6e3ff", "tertiary": "#000000", "primary-container": "#0e1c2f", "primary-fixed-dim": "#bac7e1", "background": "#f7fafd", "on-surface-variant": "#44474c", "secondary": "#295ea8", "on-secondary-container": "#004083", "secondary-container": "#80aefe", "inverse-surface": "#2d3133", "on-tertiary-fixed-variant": "#005236", "on-primary-fixed": "#0e1c2f", "surface-container-lowest": "#ffffff", "tertiary-fixed": "#6ffbbe", "on-background": "#181c1e", "tertiary-fixed-dim": "#4edea3", "surface-tint": "#525f75", "surface-container-high": "#e5e8eb", "on-error": "#ffffff", "tertiary-container": "#002113", "on-secondary-fixed": "#001b3e", "primary-fixed": "#d6e3fe", "outline-variant": "#c5c6cd", "surface": "#f7fafd", "surface-dim": "#d7dadd", "surface-bright": "#f7fafd", "on-error-container": "#93000a", "surface-container-highest": "#e0e3e6", "on-surface": "#181c1e", "surface-container": "#ebeef1", "error": "#ba1a1a", "on-primary-fixed-variant": "#3a475c", "on-primary-container": "#77849c", "surface-variant": "#e0e3e6", "on-tertiary": "#ffffff", "outline": "#75777d", "inverse-primary": "#bac7e1", "on-tertiary-container": "#009668", "on-secondary": "#ffffff", "primary": "#000000" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "space-xl": "2rem", "space-xxs": "0.25rem", "space-sm": "0.75rem", "gutter-desktop": "1.5rem", "container-max": "1240px", "space-md": "1rem", "gutter-mobile": "1rem", "space-2xl": "3rem", "space-xs": "0.5rem", "space-3xl": "4rem", "space-lg": "1.5rem" }, "fontFamily": { "label-md": [ "Manrope" ], "body-md": [ "Hanken Grotesk" ], "headline-xl-mobile": [ "Manrope" ], "display-lg": [ "Manrope" ], "headline-xl": [ "Manrope" ], "headline-sm": [ "Manrope" ], "body-sm": [ "Hanken Grotesk" ], "label-sm": [ "Manrope" ], "headline-md": [ "Manrope" ], "display-lg-mobile": [ "Manrope" ], "body-lg": [ "Hanken Grotesk" ] }, "fontSize": { "label-md": [ "14px", { "lineHeight": "18px", "letterSpacing": "0.02em", "fontWeight": "600" } ], "body-md": [ "16px", { "lineHeight": "24px", "fontWeight": "400" } ], "headline-xl-mobile": [ "28px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "display-lg": [ "48px", { "lineHeight": "56px", "letterSpacing": "-0.03em", "fontWeight": "800" } ], "headline-xl": [ "36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "headline-sm": [ "20px", { "lineHeight": "28px", "letterSpacing": "0em", "fontWeight": "600" } ], "body-sm": [ "14px", { "lineHeight": "20px", "fontWeight": "400" } ], "label-sm": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "700" } ], "headline-md": [ "24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "display-lg-mobile": [ "34px", { "lineHeight": "42px", "letterSpacing": "-0.02em", "fontWeight": "800" } ], "body-lg": [ "18px", { "lineHeight": "28px", "fontWeight": "400" } ] } } } }</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 w-full z-50"><div class="bg-primary-container text-on-primary font-label-sm text-label-sm py-space-xs px-gutter-desktop shadow-[0_1px_4px_rgba(11,25,44,0.06)]"><div class="max-w-container-max mx-auto flex items-center justify-between"><div class="flex items-center gap-space-sm"><span class="inline-flex items-center gap-space-xxs bg-tertiary-container text-tertiary-fixed px-space-xs py-0.5 rounded-lg text-label-sm font-label-sm"><span class="material-symbols-outlined text-[14px]">verified</span>Prioridade SP</span><span class="hidden md:inline font-body-sm text-body-sm text-on-primary-fixed-variant">Atendimento Rápido em Toda Grande São Paulo • Máquina Reserva Garantida durante o Reparo</span></div><a class="inline-flex items-center gap-space-xxs text-tertiary-fixed hover:text-tertiary-fixed-dim transition-colors" href="https://wa.me/5511987654321" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[16px]">call</span><span class="font-label-md text-label-md">(11) 98765-4321</span></a></div></div><div class="h-20 bg-surface/90 backdrop-blur-xl shadow-[0_2px_8px_-2px_rgba(11,25,44,0.06)]"><div class="max-w-container-max mx-auto h-full px-gutter-desktop flex items-center justify-between gap-space-lg"><div class="flex items-center gap-space-md"><img alt="LavaPronto Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XYzFzFpk0A072xUlZ1Rvuwz19cvMmXlIf0B4R3UIozUmE70m81PLt_vh6lkFO5WUvJpks5EmO4XAOLMTybZBwr80h_J0r5FI3-8RNpbxrrzI65DbH9btv6K6qakP6OJ9nyhyrn8xDnPP_nM8819klBuYwlhy_pWRl_2M_mofwbxw1G66eSOPbXuoPVKfHsrVfqD8TAUCX-4j2RhXj-O4oD_muXEuYaf01RaPLbLytgN4iGKFZ2oDyiAIMg"/><a class="flex flex-col" data-path="home" href="#"><span class="font-headline-sm text-headline-sm tracking-tight text-primary leading-none">LavaPronto</span><span class="font-label-sm text-label-sm text-secondary tracking-wide uppercase">Máquina Reserva Inclusa</span></a></div><nav class="hidden lg:flex items-center gap-space-xl" data-active-classes="text-secondary font-label-md font-bold"><a aria-current="page" class="transition-colors text-secondary font-label-md font-bold" data-path="home" href="#">Início</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="diferenciais" href="#">Diferenciais</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="como-funciona" href="#">Como Funciona</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="localizacao-contato" href="#">Localização &amp; Contato</a></nav><div class="flex items-center gap-space-md"><a class="inline-flex items-center gap-space-xs bg-secondary text-on-secondary px-space-md py-space-sm rounded-xl font-label-md text-label-md hover:bg-on-secondary-container transition-all shadow-[0_2px_8px_-2px_rgba(11,25,44,0.06)] hover:shadow-[0_12px_24px_-6px_rgba(11,25,44,0.1)]" data-path="solicitar-orcamento" href="#"><span class="material-symbols-outlined text-[18px]">build_circle</span><span>Solicitar Orçamento</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></div></header><main class="w-full pt-20 bg-surface"><div class="flex flex-col w-full">
+<!-- HERO SECTION -->
+<section class="relative w-full overflow-hidden bg-surface py-space-2xl lg:py-space-3xl">
+<!-- Ambient subtle background glow -->
+<div class="absolute -top-24 -left-24 w-96 h-96 rounded-full bg-secondary-fixed/40 blur-3xl pointer-events-none"></div>
+<div class="absolute top-1/2 -right-32 w-[30rem] h-[30rem] rounded-full bg-tertiary-fixed-dim/20 blur-3xl pointer-events-none"></div>
+<div class="max-w-container-max mx-auto px-gutter-desktop relative z-10">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-2xl items-center">
+<!-- Left: Copy & Conversions (7 cols) -->
+<div class="lg:col-span-7 flex flex-col items-start">
+<!-- Badge Header -->
+<div class="inline-flex items-center gap-space-xs px-space-sm py-space-xxs rounded-full bg-tertiary-container text-tertiary-fixed font-label-sm text-label-sm mb-space-md shadow-sm">
+<span class="material-symbols-outlined text-[16px]">sync_alt</span>
+<span>EXCLUSIVIDADE EM SÃO PAULO &amp; ABC</span>
+</div>
+<!-- Headline -->
+<h1 class="font-headline-xl text-headline-xl lg:font-display-lg lg:text-display-lg text-primary tracking-tight font-extrabold mb-space-md leading-tight">
+            Sua rotina de roupas limpas não para: Consertamos sua máquina e <span class="text-secondary underline decoration-tertiary-fixed decoration-4 underline-offset-8">emprestamos uma Lava &amp; Seca</span> enquanto a sua estiver no conserto!
+          </h1>
+<!-- Subtitle -->
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-space-xl max-w-2xl leading-relaxed">
+            Sem custo adicional pelo empréstimo da máquina reserva. Atendimento a domicílio com técnicos certificados, diagnóstico ágil e peças 100% originais em São Paulo.
+          </p>
+<!-- Quick Trust Pills -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-xs w-full mb-space-xl">
+<div class="flex items-center gap-space-xs p-space-xs bg-surface-container-lowest rounded-lg shadow-sm">
+<span class="material-symbols-outlined text-secondary text-[20px]">bolt</span>
+<span class="font-label-sm text-label-sm text-on-surface">Agendamento no mesmo dia</span>
+</div>
+<div class="flex items-center gap-space-xs p-space-xs bg-surface-container-lowest rounded-lg shadow-sm">
+<span class="material-symbols-outlined text-secondary text-[20px]">verified</span>
+<span class="font-label-sm text-label-sm text-on-surface">Peças originais c/ 1 ano de garantia</span>
+</div>
+<div class="flex items-center gap-space-xs p-space-xs bg-surface-container-lowest rounded-lg shadow-sm">
+<span class="material-symbols-outlined text-secondary text-[20px]">local_shipping</span>
+<span class="font-label-sm text-label-sm text-on-surface">Instalação gratuita da reserva</span>
+</div>
+</div>
+<!-- CTAs -->
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-space-md w-full sm:w-auto">
+<a class="inline-flex items-center justify-center gap-space-xs bg-tertiary-container text-tertiary-fixed px-space-xl py-space-md rounded-xl font-label-md text-label-md shadow-md hover:shadow-xl hover:scale-[1.02] transition-all" href="https://wa.me/5511987654321?text=Ol%C3%A1%2C%20gostaria%20de%20um%20or%C3%A7amento%20gratuito%20com%20m%C3%A1quina%20reserva!" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[20px]">chat</span>
+<span>Solicitar Orçamento Grátis via WhatsApp</span>
+</a>
+<a class="inline-flex items-center justify-center gap-space-xs bg-surface-container-lowest text-secondary px-space-lg py-space-md rounded-xl font-label-md text-label-md shadow-sm hover:bg-surface-container hover:shadow-md transition-all" href="#como-funciona">
+<span>Ver Como Funciona o Empréstimo</span>
+<span class="material-symbols-outlined text-[18px]">arrow_downward</span>
+</a>
+</div>
+<!-- Rating Micro-Badge -->
+<div class="flex items-center gap-space-xs mt-space-lg pt-space-sm border-t border-outline-variant/30">
+<div class="flex text-amber-500">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface font-bold">4.9 / 5</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">baseado em +840 manutenções residenciais realizadas em SP</span>
+</div>
+</div>
+<!-- Right: Photographic Visual & Floating Card (5 cols) -->
+<div class="lg:col-span-5 relative mt-space-xl lg:mt-0">
+<div class="relative rounded-2xl overflow-hidden shadow-xl bg-surface-container-high">
+<img class="w-full h-[460px] object-cover object-center transform hover:scale-105 transition-transform duration-700" data-alt="A smiling friendly professional repair technician in a crisp navy uniform with a digital diagnostic tablet kneeling next to a modern stainless steel front load washer dryer in a luminous modern laundry room. Soft natural sunlight illuminates the warm residential cabinetry and pristine appliances." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjg0CY1H14AcreGyrNQ0ymhjjcUsT_MiWYAXpXfRQBn8153-0OJQuqhw74OBze_8oDoTxEaW3niy050JREjgHP5UvWBqwwKzh7hiMnbrP5W8s2J-80CfO32iFpdZEjOlearDehKavNKOM1NPkOwbxVdHDBU3S8X4fjsKeIZlgKsZ42KRtTLeLSh7AI7uLz-mfS0x3D6Z7Lf7wy5ccMWOe1G_1Q_cRKwl5jP3bgWBB46R3HVVKPZGy31Q"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary-container/80 via-transparent to-transparent"></div>
+<!-- Live Technical Status Overlay -->
+<div class="absolute top-4 left-4 inline-flex items-center gap-space-xs bg-surface-container-lowest/95 backdrop-blur-md px-space-sm py-space-xs rounded-xl shadow-md">
+<span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-ping"></span>
+<span class="font-label-sm text-label-sm text-primary font-bold">Técnicos em Rota na Capital &amp; ABC</span>
+</div>
+</div>
+<!-- Floating Overlapping Card -->
+<div class="absolute -bottom-8 -left-4 sm:-left-8 max-w-xs bg-surface-container-lowest p-space-md rounded-2xl shadow-xl border border-outline-variant/30 flex items-start gap-space-sm animate-bounce-short">
+<div class="p-space-xs bg-tertiary-container text-tertiary-fixed rounded-xl flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">published_with_changes</span>
+</div>
+<div>
+<p class="font-label-md text-label-md text-primary font-bold">Máquina Reserva Inclusa</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Sem taxa diária de locação. Você usa à vontade enquanto consertamos a sua.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- BRANDS TICKER STRIP -->
+<section class="w-full bg-surface-container-lowest py-space-md shadow-sm">
+<div class="max-w-container-max mx-auto px-gutter-desktop flex flex-col md:flex-row items-center justify-between gap-space-md">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold">
+        Especialistas Credenciados em:
+      </span>
+<div class="flex flex-wrap items-center justify-center gap-space-lg md:gap-space-2xl text-on-surface-variant opacity-80">
+<span class="font-headline-sm text-headline-sm font-extrabold tracking-tight hover:text-secondary transition-colors cursor-default">LG Direct Drive</span>
+<span class="font-headline-sm text-headline-sm font-extrabold tracking-tight hover:text-secondary transition-colors cursor-default">Samsung EcoBubble</span>
+<span class="font-headline-sm text-headline-sm font-extrabold tracking-tight hover:text-secondary transition-colors cursor-default">Electrolux Inverter</span>
+<span class="font-headline-sm text-headline-sm font-extrabold tracking-tight hover:text-secondary transition-colors cursor-default">Brastemp Ative!</span>
+<span class="font-headline-sm text-headline-sm font-extrabold tracking-tight hover:text-secondary transition-colors cursor-default">Midea HealthGuard</span>
+<span class="font-headline-sm text-headline-sm font-extrabold tracking-tight hover:text-secondary transition-colors cursor-default">Bosch Home</span>
+</div>
+</div>
+</section>
+<!-- DIFERENCIAIS SECTION -->
+<section class="w-full py-space-3xl bg-surface-container-low" id="diferenciais">
+<div class="max-w-container-max mx-auto px-gutter-desktop">
+<!-- Title & Subtitle -->
+<div class="text-center max-w-3xl mx-auto mb-space-2xl">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold">Precisão Técnica &amp; Conforto Doméstico</span>
+<h2 class="font-headline-xl text-headline-xl text-primary font-bold mt-space-xs mb-space-sm">
+          Por que escolher a LavaPronto?
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Eliminamos o estresse habitual do eletrodoméstico quebrado. Unimos protocolo industrial de bancada a um cuidado domiciliar que nunca deixa sua família desamparada.
+        </p>
+</div>
+<!-- 3 Differential Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+<!-- Card 1: Empréstimo -->
+<div class="flex flex-col bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all p-space-lg group">
+<div class="w-full h-48 rounded-xl overflow-hidden mb-space-md relative">
+<img alt="Empréstimo de Máquina Substituta" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJPRM1wOYZtNfUlWAUXZTX_t80N24UzCggun7UwEppyPppYOYB5ENiyEtuHCXvapAhGMEaDplWvJAYq60yXNKM2QZYnD3RHJm1r6_Z4tei2tfdia6bL4xLXKsyX7rz0iJadIMJ-_5efNOzXu18ck0WLdUn3rn85hEs8AxItrhCZIrlxgabeGjfEZQcZWVACX5ktWwJPxun_sl3bpjEB4MECOzkcpn_orwRu0vVnDZe691W1hwRvXCnbQ"/>
+<span class="absolute top-2 right-2 bg-tertiary-container text-tertiary-fixed text-label-sm font-label-sm px-space-xs py-0.5 rounded-lg">Custo Zero</span>
+</div>
+<div class="flex items-center gap-space-xs mb-space-xs">
+<span class="material-symbols-outlined text-secondary text-[24px]">autorenew</span>
+<h3 class="font-headline-sm text-headline-sm text-primary font-bold">Máquina Substituta Grátis</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant flex-1 leading-relaxed">
+            Você não acumula cestos de roupas sujas nem gasta fortunas com lavanderias por quilo. Deixamos uma máquina higienizada funcionando na sua lavanderia no mesmo instante da retirada.
+          </p>
+<div class="mt-space-md pt-space-sm border-t border-outline-variant/20 flex items-center gap-space-xs text-secondary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+<span>Instalação e conexões hidráulicas inclusas</span>
+</div>
+</div>
+<!-- Card 2: Diagnóstico & Peças Originais -->
+<div class="flex flex-col bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all p-space-lg group">
+<div class="w-full h-48 rounded-xl overflow-hidden mb-space-md bg-surface-container-high flex items-center justify-center relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Close up shot of diagnostic multimeters and original manufacturer circuit boards, inverter motor gears, and digital tools placed neatly on an engineering technical workbench in a clean repair workshop." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDrGHouONPk9wH9cJmg_VNhbaI2_FWEKuqy3MS9GNklhKIcNwvca_y0v5vLTFyt7KF5QS110FHe-WGy2uusNaFACI7WQJEHauSQaIG_xSZEzyCSEegXz8SCNLDhtBgSsG-84DucCuhKfRcKeYSxwlfAMGGdbh96mUb2ikamJnFzhIgMzpmGQ6-XA1JN8OJEcjovSiFeYRhJIClDdBsatpUCN-fB8Qr7h9LP5qE5PFRf_PcI6DDpAKUZCg"/>
+<span class="absolute top-2 right-2 bg-primary-container text-on-primary text-label-sm font-label-sm px-space-xs py-0.5 rounded-lg">100% Genuíno</span>
+</div>
+<div class="flex items-center gap-space-xs mb-space-xs">
+<span class="material-symbols-outlined text-secondary text-[24px]">hardware</span>
+<h3 class="font-headline-sm text-headline-sm text-primary font-bold">Diagnóstico Cirúrgico &amp; Peças Genuínas</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant flex-1 leading-relaxed">
+            Equipamentos de telemetria para detecção precisa de defeitos na placa lógica, motores Direct Drive/Inverter, bombas de drenagem e rolamentos. Componentes com selo de fábrica.
+          </p>
+<div class="mt-space-md pt-space-sm border-t border-outline-variant/20 flex items-center gap-space-xs text-secondary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+<span>Sem adaptações ou peças recondicionadas</span>
+</div>
+</div>
+<!-- Card 3: Garantia Estendida -->
+<div class="flex flex-col bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all p-space-lg group">
+<div class="w-full h-48 rounded-xl overflow-hidden mb-space-md bg-surface-container-high flex items-center justify-center relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Official technical warranty certificate and quality inspection checklist with embossed stamp on a polished minimalist surface alongside high precision screwdriver tools." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCnvJ96GccuD8R_BbvJEJ2UfwnyFGKywuPN1LdFLqbziMRIkrGI9LcXSCIjleCQS-dqdic4ABe2wlYHNXySwPd2ILlZ_kj3h3c_cxCly27OaKiAynwOBAeEuAVwGZSpYaz1TUDcBkMMCc8aRu7kLg4QnCYRj6_5fHOn5HvyKmMgBdev9s4VdBKTF0RqL4y0negDdluS53E7h6xuPtkVR-5TWbcY6c87UEMXc00deN-Tqgy5BOOFmr4Oug"/>
+<span class="absolute top-2 right-2 bg-secondary text-on-secondary text-label-sm font-label-sm px-space-xs py-0.5 rounded-lg">Até 365 Dias</span>
+</div>
+<div class="flex items-center gap-space-xs mb-space-xs">
+<span class="material-symbols-outlined text-secondary text-[24px]">security</span>
+<h3 class="font-headline-sm text-headline-sm text-primary font-bold">Garantia Formal no Serviço</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant flex-1 leading-relaxed">
+            Termo formal de garantia para mão de obra especializada e componentes aplicados de até 12 meses. Emitimos Nota Fiscal eletrônica discriminada para segurança total da sua casa.
+          </p>
+<div class="mt-space-md pt-space-sm border-t border-outline-variant/20 flex items-center gap-space-xs text-secondary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+<span>Suporte prioritário e pós-atendimento ágil</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- COMO FUNCIONA SECTION -->
+<section class="w-full py-space-3xl bg-surface" id="como-funciona">
+<div class="max-w-container-max mx-auto px-gutter-desktop">
+<div class="text-center max-w-2xl mx-auto mb-space-2xl">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold">Processo Transparente</span>
+<h2 class="font-headline-xl text-headline-xl text-primary font-bold mt-space-xs mb-space-sm">
+          Como Funciona o Serviço com Máquina Reserva
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Do primeiro contato à devolução do seu aparelho calibrado: criamos um fluxo sem atrito para você não perder nem um minuto do seu dia.
+        </p>
+</div>
+<!-- Step Cards Grid -->
+<div class="relative grid grid-cols-1 lg:grid-cols-3 gap-space-lg">
+<!-- Step 1 -->
+<div class="flex flex-col bg-surface-container-lowest p-space-xl rounded-2xl shadow-sm relative z-10 border border-outline-variant/20">
+<div class="flex items-center justify-between mb-space-md">
+<span class="w-12 h-12 rounded-xl bg-primary-container text-tertiary-fixed font-headline-md text-headline-md flex items-center justify-center font-bold">
+              01
+            </span>
+<span class="material-symbols-outlined text-secondary text-[28px]">calendar_today</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary font-bold mb-space-xs">
+            1. Contato &amp; Agendamento
+          </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Você nos chama no WhatsApp ou preenche nosso formulário inteligente com a marca e sintoma da máquina. Agendamos a visita técnica pontual no período mais conveniente da sua rotina.
+          </p>
+<div class="mt-space-md pt-space-sm text-on-surface-variant font-label-sm text-label-sm flex items-center gap-space-xxs">
+<span class="material-symbols-outlined text-emerald-600 text-[18px]">bolt</span>
+<span>Resposta média em menos de 10 minutos</span>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="flex flex-col bg-surface-container-lowest p-space-xl rounded-2xl shadow-sm relative z-10 border border-outline-variant/20">
+<div class="flex items-center justify-between mb-space-md">
+<span class="w-12 h-12 rounded-xl bg-secondary text-on-secondary font-headline-md text-headline-md flex items-center justify-center font-bold">
+              02
+            </span>
+<span class="material-symbols-outlined text-secondary text-[28px]">move_to_inbox</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary font-bold mb-space-xs">
+            2. Chegada da Reserva &amp; Retirada
+          </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Nosso técnico qualificado desembarca, conecta e testa a máquina Lava &amp; Seca reserva na sua lavanderia. Em seguida, remove sua máquina com capas de proteção especiais direto para nossa bancada.
+          </p>
+<div class="mt-space-md pt-space-sm text-on-surface-variant font-label-sm text-label-sm flex items-center gap-space-xxs">
+<span class="material-symbols-outlined text-emerald-600 text-[18px]">verified</span>
+<span>Máquina reserva totalmente higienizada</span>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="flex flex-col bg-surface-container-lowest p-space-xl rounded-2xl shadow-sm relative z-10 border border-outline-variant/20">
+<div class="flex items-center justify-between mb-space-md">
+<span class="w-12 h-12 rounded-xl bg-tertiary-container text-tertiary-fixed font-headline-md text-headline-md flex items-center justify-center font-bold">
+              03
+            </span>
+<span class="material-symbols-outlined text-secondary text-[28px]">task_alt</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary font-bold mb-space-xs">
+            3. Devolução Pronta &amp; Testada
+          </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Após conserto e bancada de teste térmico/vibração, retornamos sua lava e seca como nova. Instalamos, executamos ciclo de aferição e retiramos o equipamento reserva. Simples e sem dor de cabeça!
+          </p>
+<div class="mt-space-md pt-space-sm text-on-surface-variant font-label-sm text-label-sm flex items-center gap-space-xxs">
+<span class="material-symbols-outlined text-emerald-600 text-[18px]">workspace_premium</span>
+<span>Certificado de garantia e NF entregues</span>
+</div>
+</div>
+</div>
+<!-- Interactive Diagnostic Helper Strip -->
+<div class="mt-space-2xl p-space-lg bg-surface-container-low rounded-2xl flex flex-col md:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-surface-container-lowest flex items-center justify-center text-secondary shadow-sm">
+<span class="material-symbols-outlined text-[24px]">help_center</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-primary font-bold">Identificou algum código de erro na tela?</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Erros como DE, OE, UE, LE, TE, 4E ou barulho forte na centrifugação são resolvidos com facilidade.</p>
+</div>
+</div>
+<a class="whitespace-nowrap px-space-md py-space-sm bg-primary text-on-primary rounded-xl font-label-md text-label-md hover:bg-secondary transition-all" href="#contato-orcamento">
+          Consultar Meu Erro Agora
+        </a>
+</div>
+</div>
+</section>
+<!-- SOCIAL PROOF / AVALIAÇÕES GOOGLE -->
+<section class="w-full py-space-2xl bg-surface-container-lowest border-y border-outline-variant/30">
+<div class="max-w-container-max mx-auto px-gutter-desktop">
+<div class="flex flex-col md:flex-row items-start md:items-end justify-between mb-space-xl gap-space-md">
+<div>
+<div class="flex items-center gap-space-xs text-amber-500 mb-space-xxs">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-md text-label-md text-primary font-bold ml-1">5.0 Estrelas no Google</span>
+</div>
+<h2 class="font-headline-xl text-headline-xl text-primary font-bold">
+            O que dizem os clientes atendidos em SP
+          </h2>
+</div>
+<div class="text-on-surface-variant font-body-sm text-body-sm">
+          +3.200 famílias salvas de roupas acumuladas
+        </div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+<!-- Review 1 -->
+<div class="bg-surface-container-low p-space-lg rounded-2xl shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-space-xs text-amber-500 mb-space-sm">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface italic mb-space-md">
+              "Minha lava e seca LG queimou a placa na sexta-feira com dois filhos pequenos em casa. A LavaPronto me salvou: o técnico chegou no sábado de manhã, instalou a máquina emprestada e levou a minha. Não tive nenhum transtorno!"
+            </p>
+</div>
+<div class="flex items-center gap-space-sm pt-space-sm border-t border-outline-variant/30">
+<div class="w-10 h-10 rounded-full bg-secondary/20 text-secondary flex items-center justify-center font-bold">
+              CF
+            </div>
+<div>
+<p class="font-label-md text-label-md text-primary font-bold">Camila Ferreira</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Mooca, São Paulo</p>
+</div>
+</div>
+</div>
+<!-- Review 2 -->
+<div class="bg-surface-container-low p-space-lg rounded-2xl shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-space-xs text-amber-500 mb-space-sm">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface italic mb-space-md">
+              "Serviço impecável. A substituição do rolamento da Samsung EcoBubble ficou perfeita, sem barulho nenhum agora. O técnico foi super educado, usou protetores nos pés e explicou tudo."
+            </p>
+</div>
+<div class="flex items-center gap-space-sm pt-space-sm border-t border-outline-variant/30">
+<div class="w-10 h-10 rounded-full bg-secondary/20 text-secondary flex items-center justify-center font-bold">
+              RA
+            </div>
+<div>
+<p class="font-label-md text-label-md text-primary font-bold">Rodrigo Alcantara</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Tatuapé, São Paulo</p>
+</div>
+</div>
+</div>
+<!-- Review 3 -->
+<div class="bg-surface-container-low p-space-lg rounded-2xl shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-space-xs text-amber-500 mb-space-sm">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface italic mb-space-md">
+              "O diferencial da máquina reserva é real! Achei que cobrariam taxa escondida, mas foi exatamente como anunciado. Reparo rápido com peças originais e garantia escrita de 1 ano."
+            </p>
+</div>
+<div class="flex items-center gap-space-sm pt-space-sm border-t border-outline-variant/30">
+<div class="w-10 h-10 rounded-full bg-secondary/20 text-secondary flex items-center justify-center font-bold">
+              MN
+            </div>
+<div>
+<p class="font-label-md text-label-md text-primary font-bold">Mariana Nogueira</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Santo André, ABC</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- LOCALIZAÇÃO & FORMULÁRIO DE ORÇAMENTO EXPRESSO -->
+<section class="w-full py-space-3xl bg-surface" id="contato-orcamento">
+<div class="max-w-container-max mx-auto px-gutter-desktop">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-2xl">
+<!-- Left: Location Info & Interactive Map Mockup (5 cols) -->
+<div class="lg:col-span-5 flex flex-col justify-between">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold">Base Técnica Operacional</span>
+<h2 class="font-headline-xl text-headline-xl text-primary font-bold mt-space-xs mb-space-md">
+              Venha tomar um café ou chame nosso suporte express
+            </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-lg leading-relaxed">
+              Com central de frotas e bancada especializada localizada estrategicamente na Zona Leste, alcançamos residências em toda a capital e região metropolitana com extrema pontualidade.
+            </p>
+<!-- Operational Address Card -->
+<div class="bg-surface-container-low p-space-md rounded-2xl mb-space-md flex items-start gap-space-md shadow-sm">
+<span class="material-symbols-outlined text-secondary text-[28px] mt-1">location_on</span>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-primary font-bold">Oficina Central &amp; Pátio Técnico</h4>
+<p class="font-body-md text-body-md text-on-surface mt-1">
+                  Rua Júlio César Moreira, 476<br/>
+                  São Mateus, São Paulo - SP<br/>
+<span class="text-on-surface-variant text-label-sm font-label-sm">CEP: 03962-000</span>
+</p>
+</div>
+</div>
+<!-- Operating Hours Card -->
+<div class="bg-surface-container-low p-space-md rounded-2xl mb-space-md flex items-start gap-space-md shadow-sm">
+<span class="material-symbols-outlined text-secondary text-[28px] mt-1">schedule</span>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-primary font-bold">Horário de Atendimento</h4>
+<ul class="font-body-sm text-body-sm text-on-surface-variant mt-1 space-y-1">
+<li><strong>Segunda a Sexta:</strong> 08h às 19h</li>
+<li><strong>Sábados:</strong> 08h às 14h</li>
+<li class="text-secondary font-bold">Plantão de Emergência para Clientes Ativos</li>
+</ul>
+</div>
+</div>
+<!-- Direct WhatsApp Help Box -->
+<div class="bg-tertiary-container p-space-md rounded-2xl text-on-primary flex items-center justify-between shadow-md mt-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[32px] text-tertiary-fixed">call</span>
+<div>
+<p class="font-label-sm text-label-sm text-on-tertiary-container">Dúvidas Urgentes?</p>
+<p class="font-headline-sm text-headline-sm text-on-primary font-bold">(11) 98765-4321</p>
+</div>
+</div>
+<a class="bg-tertiary-fixed text-on-tertiary-fixed px-space-md py-space-xs rounded-xl font-label-md text-label-md hover:bg-tertiary-fixed-dim transition-all" href="https://wa.me/5511987654321" rel="noopener noreferrer" target="_blank">
+                Chamar Agora
+              </a>
+</div>
+</div>
+<!-- Map Component -->
+<div class="mt-space-lg rounded-2xl overflow-hidden shadow-md relative">
+<div class="w-full h-52 bg-cover bg-center" data-location="Rua Júlio César Moreira, 476, São Mateus, São Paulo" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD74j-6gHbGssgSZobaXTZQdbMd9HO6g1CeY_PbxafEsKEvK0MNpDdJWMR1Pn8j_rUbwM89ny0sGLpD9r6Sp3DchseOUh2LIPW90wMeyyueppKhUEu00oSeh91spbef1m11s86m4VTR270IAQVLSwJyh2yShD3ENSMPDjOxYfh8Fp2WUXfR8m3BcZofUZ_kdI9AJUoFosAe-Gs0UgC0eUS-Q5XBpFbQeSKZPfhsabcvp1laZcWjBJbXlg')"></div>
+<div class="absolute bottom-3 left-3 right-3 flex items-center justify-between bg-surface-container-lowest/90 backdrop-blur-md p-space-xs px-space-sm rounded-xl">
+<span class="font-label-sm text-label-sm text-primary font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-red-500">pin_drop</span> Raio de Atendimento: SP &amp; ABC
+              </span>
+<a class="text-secondary font-label-sm text-label-sm underline hover:text-on-secondary-container" href="https://maps.google.com/?q=Rua+Júlio+César+Moreira,+476,+São+Mateus,+São+Paulo" rel="noopener noreferrer" target="_blank">
+                Abrir no Maps
+              </a>
+</div>
+</div>
+</div>
+<!-- Right: Quotation Form Card (7 cols) -->
+<div class="lg:col-span-7">
+<div class="bg-surface-container-lowest p-space-xl rounded-2xl shadow-xl border border-outline-variant/30">
+<div class="mb-space-lg">
+<span class="inline-flex items-center gap-space-xxs text-secondary font-label-sm text-label-sm font-bold bg-secondary-fixed/50 px-space-xs py-0.5 rounded-lg mb-space-xs">
+<span class="material-symbols-outlined text-[16px]">speed</span> Orçamento sem Compromisso
+              </span>
+<h3 class="font-headline-lg text-headline-xl text-primary font-bold">
+                Solicite Diagnóstico Rápido
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                Preencha os dados abaixo e entraremos em contato com a estimativa de custos e reserva do aparelho substituto.
+              </p>
+</div>
+<form class="space-y-space-md" id="lead-form" onsubmit="event.preventDefault(); document.getElementById('form-success-msg').classList.remove('hidden'); this.reset();">
+<!-- Form Field: Name -->
+<div>
+<label class="block font-label-md text-label-md text-primary mb-1" for="client-name">Nome Completo</label>
+<input class="w-full h-12 px-space-md rounded-xl bg-surface-container-low text-on-surface border border-outline-variant/50 focus:border-secondary focus:ring-2 focus:ring-secondary/20 focus:outline-none transition-all font-body-md text-body-md" id="client-name" placeholder="Ex: Fernanda Lima" required="" type="text"/>
+</div>
+<!-- Grid: WhatsApp & Bairro -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<div>
+<label class="block font-label-md text-label-md text-primary mb-1" for="client-phone">WhatsApp / Telefone</label>
+<input class="w-full h-12 px-space-md rounded-xl bg-surface-container-low text-on-surface border border-outline-variant/50 focus:border-secondary focus:ring-2 focus:ring-secondary/20 focus:outline-none transition-all font-body-md text-body-md" id="client-phone" placeholder="(11) 99999-9999" required="" type="tel"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-primary mb-1" for="client-region">Bairro / Cidade em SP</label>
+<input class="w-full h-12 px-space-md rounded-xl bg-surface-container-low text-on-surface border border-outline-variant/50 focus:border-secondary focus:ring-2 focus:ring-secondary/20 focus:outline-none transition-all font-body-md text-body-md" id="client-region" placeholder="Ex: Vila Mariana / Tatuapé" required="" type="text"/>
+</div>
+</div>
+<!-- Grid: Marca e Sintoma -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<div>
+<label class="block font-label-md text-label-md text-primary mb-1" for="machine-brand">Marca do Aparelho</label>
+<select class="w-full h-12 px-space-md rounded-xl bg-surface-container-low text-on-surface border border-outline-variant/50 focus:border-secondary focus:ring-2 focus:ring-secondary/20 focus:outline-none transition-all font-body-md text-body-md" id="machine-brand" required="">
+<option value="">Selecione a marca...</option>
+<option value="LG">LG Direct Drive / Vivace</option>
+<option value="Samsung">Samsung EcoBubble / Digital</option>
+<option value="Electrolux">Electrolux Perfect Care</option>
+<option value="Brastemp">Brastemp</option>
+<option value="Midea">Midea Storm Wash / HealthGuard</option>
+<option value="Bosch">Bosch</option>
+<option value="Outra">Outra marca</option>
+</select>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-primary mb-1" for="symptom">Principal Sintoma / Defeito</label>
+<select class="w-full h-12 px-space-md rounded-xl bg-surface-container-low text-on-surface border border-outline-variant/50 focus:border-secondary focus:ring-2 focus:ring-secondary/20 focus:outline-none transition-all font-body-md text-body-md" id="symptom" required="">
+<option value="">Selecione o sintoma...</option>
+<option value="nao-centrifuga">Não centrifuga / Não seca</option>
+<option value="barulho-forte">Barulho forte ao girar o cesto</option>
+<option value="vazamento">Vazamento de água por baixo</option>
+<option value="erro-painel">Apresenta erro no display (ex: DE, OE)</option>
+<option value="nao-liga">Não liga / Apagou totalmente</option>
+<option value="trava-porta">Porta travada com roupa dentro</option>
+<option value="outro">Outro problema mecânico</option>
+</select>
+</div>
+</div>
+<!-- Question: Precisa de Máquina Reserva? -->
+<div class="bg-surface-container p-space-md rounded-xl">
+<span class="block font-label-md text-label-md text-primary mb-space-xs font-bold">
+                  Deseja a Máquina Reserva Grátis durante o conserto?
+                </span>
+<div class="flex items-center gap-space-lg">
+<label class="inline-flex items-center gap-space-xs cursor-pointer">
+<input checked="" class="w-4 h-4 text-secondary focus:ring-secondary" name="reserva_opt" type="radio" value="sim"/>
+<span class="font-body-md text-body-md text-on-surface">Sim, quero a máquina reserva inclusa!</span>
+</label>
+<label class="inline-flex items-center gap-space-xs cursor-pointer">
+<input class="w-4 h-4 text-secondary focus:ring-secondary" name="reserva_opt" type="radio" value="nao"/>
+<span class="font-body-md text-body-md text-on-surface">Não preciso no momento</span>
+</label>
+</div>
+</div>
+<!-- Submit Button -->
+<button class="w-full h-14 bg-tertiary-container text-tertiary-fixed font-label-md text-label-md rounded-xl shadow-md hover:shadow-xl hover:scale-[1.01] transition-all flex items-center justify-center gap-space-xs" type="submit">
+<span class="material-symbols-outlined text-[20px]">send</span>
+<span>Enviar e Receber Diagnóstico Estimado</span>
+</button>
+<!-- Feedback message after submit -->
+<div class="hidden p-space-md bg-tertiary-container text-tertiary-fixed rounded-xl flex items-center gap-space-xs transition-all" id="form-success-msg">
+<span class="material-symbols-outlined text-[24px]">task_alt</span>
+<div>
+<p class="font-label-md text-label-md font-bold">Solicitação recebida com sucesso!</p>
+<p class="font-body-sm text-body-sm">Nosso técnico especialista responderá em seu WhatsApp nos próximos minutos.</p>
+</div>
+</div>
+<!-- Privacy reassurance note -->
+<p class="text-center font-label-sm text-label-sm text-on-surface-variant flex items-center justify-center gap-1">
+<span class="material-symbols-outlined text-[14px]">lock</span>
+                Seus dados estão protegidos. Não enviamos spam.
+              </p>
+</form>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA FINAL STRIP -->
+<section class="w-full bg-primary-container text-on-primary py-space-2xl">
+<div class="max-w-container-max mx-auto px-gutter-desktop flex flex-col md:flex-row items-center justify-between gap-space-lg text-center md:text-left">
+<div>
+<h3 class="font-headline-xl text-headline-xl font-bold text-on-primary">
+          Sua roupa suja não precisa esperar a máquina ficar pronta.
+        </h3>
+<p class="font-body-md text-body-md text-on-primary-fixed-variant mt-space-xxs">
+          Agende a visita hoje mesmo e receba sua Lava &amp; Seca de empréstimo sem custo.
+        </p>
+</div>
+<a class="inline-flex items-center gap-space-xs bg-tertiary-fixed text-on-tertiary-fixed px-space-xl py-space-md rounded-xl font-label-md text-label-md shadow-lg hover:bg-tertiary-fixed-dim transition-all whitespace-nowrap" href="https://wa.me/5511987654321?text=Ol%C3%A1%2C%20quero%20agendar%20minha%20visita%20com%20m%C3%A1quina%20reserva" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[20px]">chat</span>
+<span>Chamar Especialista no WhatsApp</span>
+</a>
+</div>
+</section>
+</div>
+<script>
+  // Simple smooth scroll trigger for internal anchor links
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      const targetId = this.getAttribute('href');
+      if (targetId && targetId !== '#') {
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+          e.preventDefault();
+          targetElement.scrollIntoView({ behavior: 'smooth' });
+        }
+      }
+    });
+  });
+</script></main><footer class="w-full bg-surface-container-low pt-space-3xl pb-space-xl"><div class="max-w-container-max mx-auto px-gutter-desktop"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-2xl pb-space-2xl"><div class="flex flex-col gap-space-md"><div class="flex items-center gap-space-sm"><span class="font-headline-sm text-headline-sm tracking-tight text-primary">LavaPronto</span></div><p class="font-body-sm text-body-sm text-on-surface-variant">Assistência técnica de alta precisão para lava e seca. Fornecemos máquina reserva higienizada durante todo o conserto para sua família não parar.</p><div class="inline-flex items-center gap-space-xs px-space-sm py-space-xs rounded-xl bg-surface-container-lowest shadow-[0_1px_4px_-1px_rgba(11,25,44,0.04)]"><span class="material-symbols-outlined text-tertiary-container text-[18px]">verified_user</span><span class="font-label-sm text-label-sm text-on-surface-variant">Técnicos Certificados LG, Samsung &amp; Bosch</span></div></div><div class="flex flex-col gap-space-sm"><h4 class="font-headline-sm text-headline-sm text-on-surface">Navegação</h4><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="home" href="#">Início</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="diferenciais" href="#">Diferenciais e Benefícios</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="como-funciona" href="#">Processo de Máquina Reserva</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="localizacao-contato" href="#">Regiões Atendidas</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="solicitar-orcamento" href="#">Orçamento Expresso</a></div><div class="flex flex-col gap-space-sm"><h4 class="font-headline-sm text-headline-sm text-on-surface">Unidade Operacional</h4><p class="font-body-sm text-body-sm text-on-surface-variant flex items-start gap-space-xs"><span class="material-symbols-outlined text-[18px] text-secondary">location_on</span><span>Rua Júlio César Moreira, 476<br/>São Mateus, São Paulo - SP</span></p><p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-space-xs"><span class="material-symbols-outlined text-[18px] text-secondary">schedule</span><span>Seg a Sex: 08h às 19h • Sáb: 08h às 14h</span></p><p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-space-xs"><span class="material-symbols-outlined text-[18px] text-secondary">support_agent</span><span>Plantão 24h para Emergências</span></p></div><div class="flex flex-col gap-space-sm"><h4 class="font-headline-sm text-headline-sm text-on-surface">Garantia &amp; Confiança</h4><p class="font-body-sm text-body-sm text-on-surface-variant">Todas as peças substituídas contam com 1 ano de garantia legal e certificado direto de fábrica.</p><div class="flex flex-col gap-space-xs"><div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm"><span class="material-symbols-outlined text-secondary text-[16px]">shield</span>Garantia por Escrito de 365 dias</div><div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm"><span class="material-symbols-outlined text-secondary text-[16px]">lock</span>Diagnóstico Transparente</div><div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm"><span class="material-symbols-outlined text-secondary text-[16px]">local_shipping</span>Coleta &amp; Devolução com Agendamento</div></div></div></div><div class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md text-on-surface-variant font-label-sm text-label-sm"><p>© 2025 LavaPronto Assistência Técnica Especializada. CNPJ Ativo. Todos os direitos reservados.</p><div class="flex items-center gap-space-lg"><a class="hover:text-on-surface transition-colors" data-path="politica-de-privacidade" href="#">Política de Privacidade</a><a class="hover:text-on-surface transition-colors" data-path="termos-de-servico" href="#">Termos de Serviço</a></div></div></div></footer><a aria-label="Falar no WhatsApp" class="fixed bottom-6 right-6 z-50 inline-flex items-center gap-space-xs bg-tertiary-container text-tertiary-fixed px-space-md py-space-sm rounded-full shadow-[0_20px_38px_-10px_rgba(11,25,44,0.16)] hover:shadow-[0_12px_24px_-6px_rgba(11,25,44,0.2)] hover:scale-105 transition-all" href="https://wa.me/5511987654321?text=Ol%C3%A1%2C%20preciso%20de%20assist%C3%AAncia%20para%20minha%20lava%20e%20seca%20com%20m%C3%A1quina%20reserva" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[24px]">chat</span><span class="font-label-md text-label-md hidden sm:inline">Falar com Especialista</span></a></body></html>
